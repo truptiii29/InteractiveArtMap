@@ -1,0 +1,415 @@
+.interactive-page {
+  min-height: calc(100vh - 75px);
+  background: #f7f3ec;
+  padding: 30px 34px 40px;
+  box-sizing: border-box;
+}
+
+.map-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e5ddd0;
+}
+
+.map-eyebrow {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  color: #8b4a43;
+}
+
+.map-page-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  color: #343434;
+}
+
+.map-page-header p:not(.map-eyebrow) {
+  margin: 8px 0 0;
+  font-size: 15px;
+  color: #6c6c6c;
+}
+
+.location-count {
+  padding: 14px 22px;
+  background: white;
+  border: 1px solid #e5ddd0;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(70, 50, 30, 0.08);
+  font-size: 14px;
+  color: #666;
+}
+
+.location-count strong {
+  color: #8b4a43;
+  font-size: 17px;
+}
+
+.interactive-layout {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  background: white;
+  border: 1px solid #e5ddd0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(70, 50, 30, 0.08);
+}
+
+.map-section {
+  padding: 16px;
+  background: #f9f6f0;
+  border-right: 1px solid #e5ddd0;
+}
+
+.heritage-map {
+  width: 100%;
+  height: 600px;
+  border-radius: 14px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.custom-pin-container {
+  background: transparent;
+  border: none;
+}
+
+.custom-map-pin {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  background: var(--pin-color);
+  border: 4px solid white;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+}
+
+.pin-circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
+}
+
+.map-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 170px;
+}
+
+.map-popup strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  color: #333;
+}
+
+.map-popup span {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.map-popup button {
+  margin-top: 5px;
+  padding: 8px 11px;
+  border: none;
+  border-radius: 7px;
+  background: #8b4a43;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.map-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 14px;
+  padding: 13px 15px;
+  background: white;
+  border: 1px solid #e4ddd3;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.map-legend div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.info-panel {
+  background: white;
+  padding: 34px 36px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 680px;
+}
+
+.featured-label {
+  margin-bottom: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #8b4a43;
+}
+
+.info-panel h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  line-height: 1.1;
+  color: #343434;
+}
+
+.state-name {
+  margin: 8px 0 25px;
+  color: #777;
+  font-size: 15px;
+}
+
+.art-form-card {
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #f8f4ec, #f3ede2);
+  border: 1px solid #dfd1b7;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.small-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #8a7355;
+}
+
+.art-form-card h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #454545;
+}
+
+.image-gallery {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.gallery-heading span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #8a7355;
+}
+
+.gallery-heading small {
+  font-size: 11px;
+  color: #999;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #f5f1e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e3dbcf;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 16px;
+  transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+.info-section {
+  margin-bottom: 25px;
+}
+
+.info-section h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  color: #454545;
+}
+
+.info-section p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.significance-card {
+  margin-bottom: 27px;
+  padding: 20px 22px;
+  background: #f5f0e7;
+  border-left: 4px solid #8b4a43;
+  border-radius: 12px;
+}
+
+.significance-card h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  color: #444;
+}
+
+.significance-card p {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.artist-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.artist-tag {
+  padding: 8px 14px;
+  background: #f2f0ec;
+  border: 1px solid #ddd8cf;
+  border-radius: 22px;
+  font-size: 13px;
+  color: #555;
+}
+
+.artwork-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+}
+
+.artwork-list li {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.category-card {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px solid #ddd8cf;
+  border-radius: 14px;
+  background: #faf9f7;
+}
+
+.category-card span {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #999;
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+@media (max-width: 1000px) {
+  .interactive-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .map-section {
+    border-right: none;
+    border-bottom: 1px solid #e5ddd0;
+  }
+
+  .heritage-map {
+    height: 520px;
+  }
+
+  .info-panel {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 600px) {
+  .interactive-page {
+    padding: 20px 15px 30px;
+  }
+
+  .map-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .map-page-header h1 {
+    font-size: 29px;
+  }
+
+  .info-panel {
+    padding: 25px 20px;
+  }
+
+  .info-panel h2 {
+    font-size: 34px;
+  }
+
+  .heritage-map {
+    height: 430px;
+  }
+
+  .map-legend {
+    justify-content: flex-start;
+  }
+}

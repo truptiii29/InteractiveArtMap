@@ -1,0 +1,23 @@
+.artform-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.artform-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.explore-text {
+  display: inline-block;
+  margin-top: 15px;
+
+  color: #7a3e3e;
+  font-weight: 600;
+}

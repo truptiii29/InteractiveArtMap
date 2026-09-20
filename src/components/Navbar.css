@@ -1,0 +1,159 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 55px;
+
+  background: #f6f2ea;
+
+  border-bottom: 1px solid #ddd6ca;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.brand-icon {
+  font-size: 25px;
+
+  color: #7b3f35;
+
+  line-height: 1;
+}
+
+
+.brand-text h1 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  color: #383838;
+}
+
+
+.brand-text p {
+  margin: 5px 0 0;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #6b6b6b;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+.nav-link {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  color: #555;
+
+  font-size: 14px;
+
+  position: relative;
+
+  transition: 0.2s ease;
+}
+
+
+.nav-link:hover {
+  color: #7b3f35;
+}
+
+
+.nav-link.active {
+  color: #7b3f35;
+}
+
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+
+  height: 3px;
+
+  background: #7b3f35;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+}
