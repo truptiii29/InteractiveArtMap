@@ -165,19 +165,27 @@ const artLocations = [
     position: [19.8135, 85.8312],
     category: "Folk Art",
     artForm: "Odisha Pattachitra",
-    color: "#16803d",
+    color: "#ea580c",
     images: [
       {
         name: "puri-1.jpg",
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pattachitra.jpg"
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pattachitra%20art.jpg"
+      },
+      {
+        name: "puri-2.jpg",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pattachitra%20of%20Jagannath.jpg"
+      },
+      {
+        name: "puri-3.jpg",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jagannath%20Theme%20in%20Pattachitra.jpg"
       }
     ],
     history:
-      "Puri is closely linked with Odisha's Pattachitra tradition, expressing mythological and ritual themes in painted scrolls and panels.",
+      "Pattachitra is a traditional painting tradition of Odisha, historically associated with temples and pilgrimage centres including Puri. Artists traditionally create detailed paintings on prepared cloth using natural and traditional colours.",
     significance:
-      "Pattachitra remains important for its intricate drawing, vivid palette, and the preservation of emblematic Jagannath and mythic imagery.",
-    artists: ["Traditional Pattachitra Artists", "Raghurajpur Artisans"],
-    artworks: ["Jagannath Pattachitra", "Mythological Scrolls", "Temple-Inspired Paintings"]
+      "Pattachitra is particularly associated with Jagannath culture and is known for detailed line work, decorative borders and colourful depictions of Hindu mythology and religious subjects.",
+    artists: ["Traditional Pattachitra Artists", "Raghurajpur Artists"],
+    artworks: ["Jagannath Pattachitra", "Pattachitra Paintings", "Odisha Traditional Paintings"]
   },
   {
     id: 9,
@@ -186,19 +194,19 @@ const artLocations = [
     position: [17.385, 78.4867],
     category: "Miniature Art",
     artForm: "Deccan Painting",
-    color: "#2563eb",
+    color: "#9333ea",
     images: [
       {
         name: "hyderabad-1.jpg",
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Deccani_painting.jpg"
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Akbar%20painting%20from%20Deccan%20%2819th%20century%29.jpg"
       }
     ],
     history:
-      "Deccan painting developed in the royal courts of the Deccan and formed an important chapter in Indian miniature art.",
+      "Deccan painting developed in the courts of the Deccan Sultanates and later Hyderabad. The tradition is known for rich colours, decorative details and distinctive courtly and literary subjects.",
     significance:
-      "It is valued for its rich color palette, decorative detail, courtly mood, and distinctive regional artistic language.",
-    artists: ["Deccan Court Artists", "Anonymous Deccani Painters"],
-    artworks: ["Deccan Miniatures", "Court Paintings", "Royal Portraits"]
+      "Deccan miniature painting represents an important regional tradition of Indian miniature art and reflects the cultural exchanges between Indian, Persian and other artistic traditions.",
+    artists: ["Deccan Court Painters", "Traditional Hyderabad Artists"],
+    artworks: ["Deccan Miniatures", "Court Paintings", "Hyderabad Deccan Art"]
   },
   {
     id: 10,
