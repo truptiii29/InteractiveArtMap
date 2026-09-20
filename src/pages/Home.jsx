@@ -91,6 +91,19 @@ function Home() {
         </div>
       </section>
 
+      <section className="journey-section">
+        <div className="section-heading">
+          <p className="section-eyebrow">A JOURNEY THROUGH INDIA</p>
+
+          <h2>From Kashmir to Kanyakumari</h2>
+
+          <p>
+            Explore the diverse artistic traditions, cultural heritage, and
+            creative expressions found across India.
+          </p>
+        </div>
+      </section>
+
       <section className="art-traditions-section" id="art-traditions">
         <div className="section-heading center-heading">
           <p className="section-eyebrow">EXPLORE THE TRADITIONS</p>

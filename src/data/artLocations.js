@@ -47,24 +47,24 @@ const artLocations = [
     state: "Maharashtra",
     position: [19.076, 72.8777],
     category: "Modern Art",
-    artForm: "Modern and Colonial-Era Indian Art",
+    artForm: "Modern Indian Art",
     color: "#7c3aed",
     images: [
       {
         name: "mumbai-1.jpg",
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Dance_of_the_Nautch_Girls.jpg"
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Gallery%20of%20Modern%20Art%2C%20Mumbai%2C%20India%20%2820575179683%29.jpg"
       },
       {
         name: "mumbai-2.jpg",
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bombay_Street_Scene.jpg"
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indira%20devi.jpg"
       }
     ],
     history:
-      "Mumbai emerged as a major artistic centre during the colonial and modern periods, shaped by urban life, institutions and artistic experimentation.",
+      "Mumbai has been an important centre for modern and contemporary Indian art, with major museums, galleries and artistic institutions contributing to the city's cultural landscape.",
     significance:
-      "The city was central to the development of modern Indian art and to the visual dialogue between urban culture, colonialism and artistic innovation.",
-    artists: ["M. F. Husain", "F. N. Souza", "S. H. Raza"],
-    artworks: ["Dance of Nautch Girls", "Modern Indian Paintings", "Progressive Artists' Group Works"]
+      "The city has played an important role in the development and exhibition of modern Indian art, bringing together artists, galleries, museums and cultural institutions.",
+    artists: ["Modern Indian Artists", "Contemporary Indian Artists"],
+    artworks: ["Modern Indian Paintings", "Contemporary Art", "Indian Modernist Works"]
   },
   {
     id: 4,
@@ -92,21 +92,29 @@ const artLocations = [
     name: "Thanjavur",
     state: "Tamil Nadu",
     position: [10.787, 79.1378],
-    category: "Folk Art",
+    category: "Classical Art",
     artForm: "Thanjavur Painting",
-    color: "#16803d",
+    color: "#d97706",
     images: [
       {
         name: "thanjavur-1.jpg",
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Thanjavur_painting.jpg"
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tanjore%20art.jpg"
+      },
+      {
+        name: "thanjavur-2.jpg",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tanjore%20Painting%20Vinyaka.jpg"
+      },
+      {
+        name: "thanjavur-3.jpg",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Natarajar%20Tanjore%20painting.jpg"
       }
     ],
     history:
-      "Thanjavur developed a distinctive painting tradition associated with temples, courts and devotional practice in South India.",
+      "Thanjavur painting is a classical South Indian painting tradition associated with Thanjavur in Tamil Nadu. The tradition developed in the Maratha court of Thanjavur and became known for richly decorated devotional paintings.",
     significance:
-      "The tradition is admired for its luminous colors, gold leaf work, intricate ornamental details and devotional subject matter.",
-    artists: ["Traditional Thanjavur Artists", "Temple Artisans"],
-    artworks: ["Temple Paintings", "Gold Foil Religious Works", "South Indian Panels"]
+      "Thanjavur paintings are recognised for rich colours, gold foil, raised gesso work and the use of glass beads or semi-precious stones. Religious subjects such as Hindu gods, goddesses and saints are common.",
+    artists: ["Traditional Thanjavur Artists", "South Indian Temple Artists"],
+    artworks: ["Thanjavur Ganesha Paintings", "Nataraja Thanjavur Paintings", "Traditional Tanjore Paintings"]
   },
   {
     id: 6,

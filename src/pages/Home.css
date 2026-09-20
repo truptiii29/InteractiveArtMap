@@ -124,6 +124,21 @@
   padding: 100px 8%;
 }
 
+.journey-section {
+  padding: 50px 8% 0;
+}
+
+.journey-section .section-heading {
+  max-width: 900px;
+}
+
+.journey-section .section-heading p:last-child {
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5f554f;
+}
+
 .section-heading {
   max-width: 750px;
 }
